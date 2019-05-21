@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>zadanie1</title>
+
+    <script type="text/javascript">
+
+        function wynik() {
+
+            var liczba = document.getElementById("pole").value;
+
+            if (liczba < 0) document.getElementById("wynik").innerHTML = "ujemna"
+            else if (liczba > 0) document.getElementById("wynik").innerHTML = "dodatnia"
+            else if (liczba == 0) document.getElementById("wynik").innerHTML = "zero"
+            else document.getElementById("wynik").innerHTML = "należy podać liczbę"
+
+        }
+
+    </script>
+
+
 </head>
+
 <body>
-$END$
+
+<input type="text" id="pole">
+<input type="submit" value="sprawdz" onclick="wynik()">
+
+<div id="wynik"></div>
 </body>
 </html>
